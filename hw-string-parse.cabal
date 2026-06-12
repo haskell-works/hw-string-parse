@@ -13,7 +13,7 @@ maintainer:             newhoggy@gmail.com
 copyright:              2016-2021 John Ky
 license:                BSD-3-Clause
 license-file:           LICENSE
-tested-with:            GHC == 9.2.2, GHC == 9.0.2, GHC == 8.10.7, GHC == 8.8.4, GHC == 8.6.5
+tested-with:            GHC == 9.14.1, GHC == 9.12.4, GHC == 9.10.3, GHC == 9.8.4, GHC == 9.6.7, GHC == 9.4.8, GHC == 9.2.8, GHC == 9.0.2, GHC == 8.10.7, GHC == 8.8.4
 build-type:             Simple
 extra-source-files:     README.md
 
@@ -23,9 +23,9 @@ source-repository head
 
 common base                       { build-depends: base                       >= 4.11       && < 5      }
 
-common doctest                    { build-depends: doctest                    >= 0.16.2     && < 0.23   }
+common doctest                    { build-depends: doctest                    >= 0.16.2     && < 0.26   }
 common doctest-discover           { build-depends: doctest-discover           >= 0.2        && < 0.3    }
-common QuickCheck                 { build-depends: QuickCheck                                  < 2.15   }
+common QuickCheck                 { build-depends: QuickCheck                                  < 2.19   }
 common bytestring                 { build-depends: bytestring                                  < 0.13   }
 common hspec                      { build-depends: hspec                                       < 3      }
 common vector                     { build-depends: vector                                      < 0.14   }
